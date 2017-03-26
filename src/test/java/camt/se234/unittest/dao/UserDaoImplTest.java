@@ -36,7 +36,14 @@ public class UserDaoImplTest {
         thrown.expect(NullPointerException.class);
         userService.login("","");
     }
-
+    @Test
+    public void testgetPubAllowanceUser(){
+        UserServiceImpl userService = new UserServiceImpl();
+        UserDaoImpl userDao = new UserDaoImpl();
+        userService.setUserDao(userDao);
+        assertThat(userService.getPubAllowanceUser( LocalDate.of(2017,3,20)), hasItems(new User("Prayuth","1234","Tu",
+                LocalDate.of(1979,2,14),"08612345678")));
+    }
 
 
 }
