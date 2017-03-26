@@ -68,12 +68,8 @@ public class UserDaoImplTest {
                 ));
 
 
-
-
-    @Test
-    public void testisAbleToGoToPub(){
-
     }
+
     @Test
     public void testLoginException()  {
         UserServiceImpl userService = new UserServiceImpl();
