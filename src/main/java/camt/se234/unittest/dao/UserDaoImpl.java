@@ -36,15 +36,6 @@ public class UserDaoImpl {
         users.add(new User("Thapanis","5415","GOAT",
                 LocalDate.of(2017,5,10),"09187654321"));
 
-users.add(new User("AAA","12315","AFZK",
-                LocalDate.of(1989,12,14),"085123416781"));
-        users.add(new User("SSSS","5676","J",
-                LocalDate.of(1999,4,30),"0968765431121"));
-        users.add(new User("Katyip","1034","TRax",
-                LocalDate.of(1977,12,4),"08622345671"));
-        users.add(new User("Thanaphan","5415","GRAT",
-                LocalDate.of(2017,5,10),"09187654321"));
-
     }
 
     public List<User> getUsers(){
