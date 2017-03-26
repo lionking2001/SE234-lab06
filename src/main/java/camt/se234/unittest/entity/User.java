@@ -14,6 +14,14 @@ public class User {
     LocalDate dateOfBirth;
     String telephoneNo;
 
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getName() {
+        return name;
+    }
+
     public User(String username, String password, String name, LocalDate dateOfBirth, String telephoneNo) {
         this.username = username;
         this.password = password;
