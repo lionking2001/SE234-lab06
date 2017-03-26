@@ -17,7 +17,7 @@ public class UserDaoImpl {
         users.add(User.builder().name("Honey").username("Honey").password("aabbcc")
                 .dateOfBirth(LocalDate.of(2012,11,13)).telephoneNo("0000000000").build());
         users.add(User.builder().name("NoName").username("None").password("none")
-                .dateOfBirth(LocalDate.of(2112,1,1)).telephoneNo("9999999999").build());
+                .dateOfBirth(LocalDate.of(2018,2,2)).telephoneNo("9999999999").build());
         users.add(new User("Kanjanaroot","1234","Fluke",
                 LocalDate.of(1980,2,14),"08612341678"));
         users.add(new User("Kittipan","5675","James",
