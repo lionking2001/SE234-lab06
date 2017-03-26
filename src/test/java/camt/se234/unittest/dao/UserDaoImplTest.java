@@ -158,11 +158,14 @@ public class UserDaoImplTest {
 //        assertThat(userService.isAbleToGoToPub(userService.login("None","none"), LocalDate.of(2017,3,20)), is(false));
         //Add more test class for update method
         assertThat(userService.isAbleToGoToPub(userService.login("None","none"), LocalDate.of(2018,2,2)), is(false));
+        assertThat(userService.isAbleToGoToPub(new User("None","none","NoName",
+                LocalDate.of(2018,2,2),"9999999999"), LocalDate.of(2018,2,2)), is(false));
+
 
 
 
     }
-   
+
 
     @Rule
     public ExpectedException thrown = ExpectedException.none();
